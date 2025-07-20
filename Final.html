@@ -7,7 +7,8 @@
   <title>Gayathri M - Developer Portfolio</title>
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
     * {
       margin: 0;
@@ -20,47 +21,62 @@
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.8;
+      font-size: 16px;
     }
 
     header {
-      background: #333;
-      color: #fff;
-      padding: 1rem 0;
+      background: #1f1f1f;
+      color: #e0e0e0;
+      padding: 1.5rem 0;
       text-align: center;
       position: sticky;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.6);
     }
 
     header h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
       margin-bottom: 0.5rem;
+      color: #00bcd4;
     }
 
     nav a {
-      color: #fff;
+      color: #e0e0e0;
       margin: 0 1rem;
       text-decoration: none;
+      font-weight: 400;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #00bcd4;
     }
 
     section {
-      padding: 2rem;
+      padding: 3rem 1rem;
       margin: 1rem auto;
       max-width: 1000px;
     }
 
+    h2 {
+      font-size: 2rem;
+      color: #00bcd4;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
     #about img {
-      max-width: 200px;
+      max-width: 180px;
       border-radius: 50%;
       display: block;
-      margin: 1rem auto;
+      margin: 1.5rem auto;
+      border: 4px solid #00bcd4;
     }
 
     .skills {
@@ -71,23 +87,34 @@
     }
 
     .skill {
-      background: #eee;
-      padding: 1rem;
+      background: #1e1e1e;
+      padding: 1rem 1.5rem;
       border-radius: 10px;
-      min-width: 120px;
       text-align: center;
+      border: 1px solid #333;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      color: #e0e0e0;
+      font-weight: 500;
     }
 
     .projects .project {
       margin-bottom: 2rem;
-      border: 1px solid #ccc;
-      padding: 1rem;
-      border-radius: 10px;
+      background: #1e1e1e;
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid #333;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .projects .project h3 {
+      color: #00bcd4;
+      margin-bottom: 0.5rem;
     }
 
     .projects .project a {
       text-decoration: none;
-      color: #007bff;
+      color: #80deea;
+      font-weight: 500;
     }
 
     .projects .project a:hover {
@@ -97,14 +124,15 @@
     footer {
       text-align: center;
       padding: 1rem;
-      background: #333;
-      color: #fff;
+      background: #1f1f1f;
+      color: #ccc;
+      font-size: 0.9rem;
     }
 
     .social-icons a {
       margin: 0 0.5rem;
-      color: #fff;
-      font-size: 1.2rem;
+      color: #00bcd4;
+      font-size: 1.4rem;
     }
 
     .contact-form {
@@ -118,21 +146,31 @@
     .contact-form input,
     .contact-form textarea {
       padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+      border: 1px solid #333;
+      border-radius: 6px;
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+      font-size: 1rem;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #888;
     }
 
     .contact-form button {
       padding: 0.75rem;
-      background: #333;
-      color: #fff;
+      background: #00bcd4;
+      color: #121212;
       border: none;
       cursor: pointer;
-      border-radius: 5px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s ease;
     }
 
     .contact-form button:hover {
-      background: #555;
+      background: #0097a7;
     }
   </style>
 </head>
@@ -152,7 +190,7 @@
   <section id="about">
     <h2>About Me</h2>
     <img src="assets/profile.jpg" alt="Gayathri M" />
-    <p>Hello! I'm Gayathri M, a passionate developer currently pursuing Computer Science. I love building web applications and solving real-world problems with code. I'm constantly learning and exploring new technologies to improve my skills and make an impact through technology.</p>
+    <p style="text-align:center;">Hello! I'm Gayathri M, a passionate developer currently pursuing Computer Science. I love building web applications and solving real-world problems with code. I'm constantly learning and exploring new technologies to improve my skills and make an impact through technology.</p>
   </section>
 
   <section id="skills">
@@ -181,7 +219,6 @@
       <p>A web application to manage daily tasks, built with React and Node.js.</p>
       <a href="https://github.com/gayathri-m/task-manager" target="_blank">View on GitHub</a>
     </div>
-    <!-- Add more projects as needed -->
   </section>
 
   <section id="contact">
@@ -222,4 +259,3 @@
   </script>
 </body>
 </html>
-
