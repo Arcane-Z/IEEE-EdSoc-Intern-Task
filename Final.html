@@ -126,4 +126,100 @@
       padding: 0.75rem;
       background: #333;
       color: #fff;
-      border: no
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .contact-form button:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gayathri M</h1>
+    <p>Developer | Problem Solver | Learner</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="assets/profile.jpg" alt="Gayathri M" />
+    <p>Hello! I'm Gayathri M, a passionate developer currently pursuing Computer Science. I love building web applications and solving real-world problems with code. I'm constantly learning and exploring new technologies to improve my skills and make an impact through technology.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">C++</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Git</div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A responsive website built using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+      <a href="https://github.com/gayathri-m/portfolio" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Task Manager App</h3>
+      <p>A web application to manage daily tasks, built with React and Node.js.</p>
+      <a href="https://github.com/gayathri-m/task-manager" target="_blank">View on GitHub</a>
+    </div>
+    <!-- Add more projects as needed -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form" id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gayathri M. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://github.com/gayathri-m" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/gayathri-m" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (name === '' || email === '' || message === '') {
+        alert('Please fill out all fields.');
+        return;
+      }
+
+      alert('Message sent successfully!');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
+
